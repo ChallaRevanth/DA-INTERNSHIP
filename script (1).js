@@ -9,23 +9,13 @@ StdDetails={
 
 console.log(StdDetails);
 
+const fun=()=>{
+    console.log("This is arrow function");
+}
 
-a=10
-b='HITAM'
-d=null
-c=true
-num=29346.342
-s=Symbol("Hi")
-m=243422424465678908809
-
-console.log(typeof a);
-console.log(typeof b);
-console.log(typeof c);
-console.log(typeof d);
-console.log(typeof num);
-console.log(typeof s);
-console.log(m);
-console.log(typeof m);
+fun()
+fun()
+fun()
 
 console.log(arr)
 
