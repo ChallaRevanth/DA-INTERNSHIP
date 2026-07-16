@@ -1,0 +1,492 @@
+Programming Language : 
+---------------------
+        ->Programming Language is the medium used to communicate  between machine and human 
+
+        Ex: python  , C , C++ , java , Dart ,  .net 
+
+python : 
+------
+    ->python is the high level object oriented programming Language
+    
+    ->python is the interpreted programming Language 
+    -> This is dynamically typed programming Language because python will allow to store different data types in variable 
+
+
+    Ex:     num=10 
+            num=True 
+            num="python" 
+
+
+Where we can use the python : 
+-------------------------------
+    ->TO build web applications 
+    ->used to build AI models 
+    ->In Data Analytics and Data UI(user interface) ..etc
+
+
+
+Tokens : 
+--------    
+    ->smallest units in the python code is called as Tokens
+
+    1. identifiers 
+        ->identifiers are the names given python code 
+        ->Ex: variable names , function names or class names 
+        ->in the place of identifiers we can not use  keywords 
+
+
+
+    2. keywords 
+        ->they are the predefined words,which is having its own meaning.
+        ->in python,there are total 34 keywords.
+        ->ex:if, else, class, and, try, or, not, break, continue, pass, import, try, except, for, if,def,int,boolean,raise,as..etc
+
+    3. operators 
+    ->they are the symbols used to perform some operations on operands.
+    ->ex:1+2;+ is a operator;1,2 are operands
+    ->types:
+        1.arithmetic operator(+,-,%,**,/,*,//)
+        2.logical operator(AND,NOT,OR)
+        3.assignment operator(=,+=,-=,*=,/=,%=)
+        4.bitwise operator(>>,<<)
+        5.special operator(not in, in,as,is)
+        6.relational operators(==,!=,>=,<=,<,>)
+
+    4. separators
+       ->Separators are used to separate the give code.
+       ->ex:(),{},[],"",<>,''
+
+    5. literals 
+       ->literals are the values used in python code.
+       ->types:
+         1.numeric literals-int,float
+         2.string literals-
+
+    6. comments 
+        ->they are used to comment the given code.
+        ->"#" is used as comment symbol.
+
+Variables:-
+    ->variables are the named memory location used to storedata or values, and it can change n number of times during execution.
+                                           or
+    ->variables act like a container used to store data /values.
+    ->syntax1:
+             variable_name=value
+    ->syntax2:
+             variable1,variable2,variable3,....=value1,value2,value3,.....
+      1.variable declaration and initialization:- defining/declaraing a variable is variable declaration, assigning a value to variable is variable initialization
+      2.variable utilization:-using/accessing variable's
+      3.variable re-initialization:-reassigning a value to variable is variable reinitialization.
+
+Data types:-
+    ->Data types represent what type of data we are storing in a variable
+    ->types:
+        * Single valued:
+           1.int
+           2.float
+           3.boolean
+        * multi valued:
+           1.string:-
+                1.series of characters.
+                2.immutable in nature.
+           2.list:-
+                  1.it is a collection of data.
+                  2.In python,it is declared using [].
+                  3.mutable(we can change the list values) in nature.
+                  4.we can show both homogeneous and heterogeneous type of data.
+                  5.list follows indexing.
+                  6.list allows duplicate values.
+           3.tuple:-
+                ->tuple is one of the data type used to store collection of data/value.
+                ->we can declare tuple in python using ().
+                ->we can show both homogeneous and heterogeneous type of data. 
+                ->it is immutable(we can't change the tuple values).
+                ->tuple allows duplicate values.
+           4.set:-
+                ->set is one of the data type used to store collection of data/value.
+                ->we can declare set using {}.
+                ->it is mutable in nature.
+                ->set doesn't follow order.
+                ->we can show both homogeneous and heterogeneous data.
+                ->set doesn't allow duplicate values.
+           5.dictionary:-
+                ->it stores collection of data in key:value pairs.
+                ->in dictionary, keys are unique and values are duplicate.
+                ->we can declare dictionary using {key:value}.
+                
+    ->In python,to check type of data we use "Type()".
+    ->To view inbuilt function use "dir(int)".  
+
+Typecasting:
+------------
+            ->converting one type of data into another type.
+            types of Typecasting:-
+            ---------------------
+                                ->Internal type casting/implicit type casting:-
+                                            ->python interpreter converts internally ,one data type to another data type.
+                                            ->ex:
+                                                1.    a=10
+                                                    b=20.33
+                                                    result=a+b
+                                                    priint(result) #30.33
+
+                                                2.  print(True+True)  #2
+                                ->external type casting/explicit type casting:-
+                                            ->converts one type of data to another type of data manually.
+                                            ->using inbuilt functions like int(),bool(),float(),str(),tuple(),dict(),set(),list() .
+Input function():
+----------------
+                ->input() are used to take input from the user during run time.
+                ->return type of input() function is string.
+Conditional statements:
+----------------------
+                    ->conditional statements are used to execute block of code based on condition.
+                     1.if:-
+                        ->'if' statement will get execute only when the condition is True.
+                        ->syntax:
+                                if condition:
+                                    statements
+                        Q.Write a python program to check whether the given number is positive or not?
+                        A.num=int(input('enter a number:'))
+                          if num>0:
+                            print('positive number')
+                        Q.Write a python program to check a given number is odd?
+                        A.1.num=int(input('enter a number:'))
+                            if num%2!=0:
+                                print('odd number')
+
+                          2.num=int(input('enter a number:'))
+                            if num%2==1:
+                                print('odd number')
+                        Q.Write a python program whether a person is eligible to apply to a job?
+                        A.AGE=int(input('enter your age:'))
+                            if AGE>=18 or AGE<=25:
+                                print('you are eligible to vote')
+                        Q.Write a query to display employee details(name,role,salary,emp_experience) who is working as a role developer or BDA? 
+                        A.emp_details={
+                            'name':'suhas',
+                            'role':'developer',
+                            'experience':4,
+                            'salary':40000000
+                            }
+                        if emp_details['role']=='developer' or emp_details['role']>'BDA':
+                        print(emp_details)
+
+                     2.if else:-
+                        ->if block will execute when condition is true and else block will execute when condition is not true.
+                        ->syntax:
+                                if condition:
+                                    statements
+                                else:
+                                    statements
+                        ->ex:
+                            1.num=int(input('enter any number to check even or odd'))
+                              if num%2==0:
+                                 print('number is even')
+
+                              else:
+                                 print('number is odd')
+                            
+                     3.if elif else:-
+                        ->if we want to check more than two conditions we will use elif.
+                        ->syntax:
+                            if condition:
+                                statements
+                            elif condition:
+                                statements
+                            else:
+                                statements
+                        Q.write a python program to check max value from 3 inputs?
+                        A.a=int(input('enter a:'))
+                          b=int(input('enter b:'))
+                          c=int(input('enter c:'))
+
+                          if a>b and a>c:
+                            print('max value:',a)
+                          elif b>c:
+                            print('max value:',b)
+                          else:
+                            print('max value:',c)
+
+                     4.else if ladder:-
+                        ->if we want to check more than two conditions.
+                        ->syntax:
+                            if condition:
+                                statements
+                            elif condition1:
+                                statements
+                            elif condition2:
+                                statements
+                            else:
+                                statements
+                        ->example:
+                            1.CGPA=int(input('enter your B-TECH cgpa:'))
+                              if CGPA>=0 and CGPA<=10:
+                                if CGPA>=9 and CGPA<10:
+                                    print('S grade')
+                                elif CGPA>=8 and CGPA<=9:
+                                     print('A+ grade')
+                                elif CGPA>=7 and CGPA<=8:
+                                     print('A grade')
+                                elif CGPA>=6 and CGPA<=7:
+                                     print('B+ grade')
+                                elif CGPA>=5 and CGPA<=6:
+                                     print('B grade')
+                                elif CGPA>=4 and CGPA<=5:
+                                     print('C+ grade')
+                                else:
+                                     print('C grade')
+                              else:
+                                print('Invalid input')
+                     5.nested if else:-
+                        ->ex:
+                            1.num=int(input('enter a number:'))
+                              if num>=0:
+                                if num%2!=0:
+                                   print('weird number')
+                                elif num%2==0 and num>=2 and num<=5:
+                                   print('not weird number')
+                                elif num%2==0 and num>=6 and num<=20:
+                                   print('weird number')
+                                elif num%2==0 and num>20:
+                                   print('not weird number')
+                              else:
+                                print('Invalid input,please enter a positive number')
+Loops:-
+-------
+       ->Loops are used to iterate statements until condition becomes false.
+       ->types of loops:
+            1.for loop
+                ->when we know the range then we need to use for loop.
+                ->syntax:
+                    1.
+                    for variableName in range(start,end,step):
+                            statements
+                    2.in string list tuple
+                    for variableName in sequence:
+                            statements
+                ->ex:1.
+                     for i in range(10,15):
+                       print(i)
+                     2.
+                     for i in range(1,10+1):
+                       print(i)
+                     3.
+                     for i in range(1,11,2):
+                       print(i)
+                     4.
+                     for i in range(10,0,-2):
+                       print(i,end=' ')
+                     5.write a python program to count odd numbers in the range 15 to 80
+                     A.count=0
+                       for i in range(15, 81):
+                          if i%2!= 0:
+                             count+=1
+                       print("Count of odd numbers in the range 15 to 80:", count)
+                       OR
+                       count=0
+                       for i in range(15,80,1):
+                           if i%2==1:
+                              count+=1
+                       print("Count of odd numbers in the range 15 to 80:", count)
+                     6.write a python program to display sum of even no's from 100 to 150.
+                     A.total=0
+                       for num in range(100, 151):
+                          if i%2==0:
+                            total+=num
+                       print("Sum of even numbers in the range 100 to 150:", total)
+                     7.
+                       for i in  range(1, 5):
+                        if i==3:
+                          continue
+                        if i==2:
+                            break
+                        print(i)
+            2.while loop:-
+                ->when we dont know the range then we need to use while loop.
+                ->syntax:
+                    while condition:
+                        statements
+
+                ->ex:
+                    1.stdNames=[]
+                      while True: 
+                         name=input("Enter a name (or type 'exist' to finish): ")
+                         if name=='exist':  
+                            break
+                         stdNames.append(name)
+    
+                      print(stdNames)
+ex:
+1.Write a python program to display the odd nos from the given number 1234.
+A.
+number=1234
+for digit in str(number):
+    if int(digit)%2!=0:
+        print(digit,end='')
+       or
+num=1234
+ while num!=0:
+   rem=num%10  #to get last digit
+   if rem%2==1:  #to check odd or not
+     print(rem,end='')
+   num=num//10  #to remove the last digit
+2.WAPP(Write a python program) to display product of even digits in given number 32456?
+A.
+number = 32456
+product = 1
+while number!=0:
+    digit = number % 10
+    if digit % 2 == 0:
+        product *= digit
+    number //= 10
+print("Product of even digits:", product)
+
+Functions in python:-
+--------------------
+            ->functions are the block of statements that will gets executed whenever it is called.
+            ->in python,we define functions using 'def' keyword.
+
+            Why we need function:
+            ---------------------
+                        ->to perform code reusability.
+                        ->to perform specific task.
+                        ->to reduce boiler plate.
+                        ->to improve code readability.
+                        ->Syntax:
+                           def functionName(parameters…):
+                               Statements
+            ex:
+                details=[]
+                #function with parameter and without return values.
+                def storeDetails(empName,empAge,empRole):
+                    details.append({'name':empName,'age':empAge,'role':empRole})
+
+                #function without parameter and return values.
+                def displayDetails():
+                    print(details)
+
+                storeDetails('suhas',20,'hacker')
+                storeDetails('manith',20,'developer')
+                displayDetails()
+            Types of functions:-
+            --------------------
+            1.user defined functions:-
+                        ->any functions which is declared by user or programmer as per their requirement.
+                        ->ex:
+                            def factorial(num):
+                              fact=1
+                              for val in range(1,num+1):
+                                fact*=val
+                              return fact
+                            print(factorial(5))
+                            print(factorial(7))
+                            print(factorial(9))
+ 
+            2.predefined function:-
+                    ->they are the in build functions already present in python.
+                    ->ex:print(),max(),min(),count(),len(),pow(),abs()...,etc
+
+Different ways to declare functions:-
+-----------------------------------
+        1.function without parameter and return value.
+        2.function with parameter and without return value.
+        3.function without parameter and with return value.
+        4.function with parameter and return value.
+
+        Function with parameter:-
+                ->when ever we want to pass input we need to go function without parameter.
+
+        Function with return value:-
+                ->when ever we want result of the function for further operation, we need to go function with return value.
+
+        Types of arguements:-
+                1.default arguments
+                2.keyword arguments
+                3.arbitrary arguments(**kwargs,*args)
+
+OOP's(object oriented programming):-
+------
+      1.class:
+      ->it is a template or blueprint used for creating objects.
+      ->it contains 
+            -variables (attributes/data members)
+            -function (functional members/methods)
+            -constructors
+      ->syntax:
+            class className:
+                    Functions
+
+      2.object:
+            ->it is a realtime entity which have both state(variable) and behaviour(function).
+            ->object is an instance which have both attributes and behaviour.
+            ->state means what it can hold.
+            ->behaviour means how it can behave.
+            ->syntax:
+                    class className:
+                            pass
+
+                            className  ->object
+      3.constructors:
+            ->it is a special method used to initialize variable values.
+            ->it will get invoked whenever we create object for the class.
+            ->in python,we can declare constructor using '__init__()' function.
+
+OOP's Principles:-
+-----------------
+            1.Inheritance.
+            2.Abstraction.
+            3.Encapsulation.
+            4.Polymorphism.
+NOTE:->to perform code reusability,we need inheritance.
+     ->to achieve abstraction we require inheritance.
+     ->to achieve method overriding,inheritance is required.
+    1.Inheritance:
+            ->Acquiring/inheriting the properties from one class to another class.
+            ->Types of inheritance:
+                    -Single level inheritance:A child class inherits from exactly one parent class.
+                    -Multi level inheritance:A child class inherits from a parent class, which itself inherits from another parent class. This forms a linear, multi-tiered chain of inheritance (like grandchild → parent → grandparent).
+                    -Hybrid inheritance:A complex architecture combining two or more of the inheritance types listed above. Python manages potential conflicts or lookup ordering in these networks using the Method Resolution Order (MRO) algorithm.
+                    -Hierarchial inheritance:Multiple child classes inherit from a single, shared parent class. It is the structural opposite of multiple inheritance.
+                    -Multiple inheritance:A child class inherits directly from two or more parent classes.
+
+                1.Single level inheritance:
+                    ->single sub class/single child class/single derived class acquiring properties from only one parent class/super class/base class.
+                2.Multi level inheritance:
+                    ->subclass acquiring properties from its superClass inturn superClass acquiring from its superClass.
+                3.Hierarchial inheritance:
+                    ->multiple subclasses inherit properties from only one superclass.
+                4.Hybrid inheritance:
+                    ->combination of single level or multi level or hierarchial level. 
+                5.Multiple inheritance:
+                    ->single subclass is inheriting/acquiring properties from multiple super classes.
+
+    2.Polymorphism:
+            ->same method showing different behaviour throughout its life cycle.
+            ->in python,to do Polymorphism we require inheritance and method overriding.
+            ->method overriding:
+                    -developing same method in subclass as in superclass but different implementations in subclass.
+                    -we use this,whenever we want to add new features to existing system.
+                    -in case of method overriding, we will get over readed implementations.
+            ->method hiding:
+                    -subclass implementations hide the properties of superclass.
+            ->super()
+
+
+    3.Encapsulation:
+            ->wrapping up of a data members(variables) and function members(functions) into a single point by declaring private variable.
+            ->access specifiers:
+                    1.public            ex:name
+                    2.protected         ex:_name
+                    3.private           ex:__name
+
+    4.Abstraction:
+            ->hiding complexity of the system and exposing functions required to the end user.
+            ->we can achieve abstraction using inheritance and abstract class.
+
+
+Exception:-
+----------
+        ->exceptions are run time errors / instances that triggers and stop execution.
+        ->to handle exception using 'try except' or 'try except finally'.
+            

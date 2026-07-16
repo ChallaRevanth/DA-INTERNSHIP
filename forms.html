@@ -1,0 +1,43 @@
+button:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            text-shadow: 3px 3px 3px aliceblue;
+            box-shadow: 3px 3px 3px purple;
+            background-color: rgb(153, 98, 43);
+        }
+
+        label{
+            color: aliceblue;
+            font-weight: bold;
+            font-style: italic;
+        }
+        label:first-of-type::before{
+            content: "🙎🏻";
+        }
+        label:last-of-type::before{
+            content:"🔐"
+        }
+        input{
+            padding: 8px ;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Login</legend>
+
+            <h1>Login</h1>
+            <label for="username">Username: </label>
+            <input type="text" id="username" placeholder="Enter Username"> 
+            <br> <br>
+            
+            <label for="psw">Password:</label>
+            <input type="password" id="psw" placeholder="Enter password">
+            <br> <br>
+            
+            <button type="submit">Sign In</button>
+            <button type="reset">Cancel</button>
+        </fieldset>
+    </form>
