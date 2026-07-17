@@ -1,5 +1,5 @@
 #dictionary
-std_details={'name':'suhas','rollno':544,'ph_no':7208372737,'gender':'male','isActive':True,'skills':['html','JS','css'],'address':{'city':'hyd','pincode':500037},'name':'sv'}
+std_details={'name':'revanth','rollno':553,'ph_no':7208372737,'gender':'male','isActive':True,'skills':['html','JS','css'],'address':{'city':'hyd','pincode':500037},'name':'sv'}
 
 print(std_details)
 print(std_details['name'])
@@ -9,8 +9,8 @@ std_details['skills'].append('python')
 print(std_details.get('name'))
 print(std_details.keys())
 print(std_details.values())
-std_details['name']='rakesh'
-std_details['gender']='female'
+std_details['name']='ram'
+std_details['gender']='male'
 print(std_details)
 std_details['skills'].pop()
 
@@ -25,7 +25,7 @@ if AGE>=18 and AGE<=25:
 
 
 
-emp_details={'name':'suhas',
+emp_details={'name':'revanth',
              'role':'developer',
              'experience':4,
              'salary':40000000
@@ -34,13 +34,13 @@ if emp_details['role']=='developer' or emp_details['role']>'BDA':
     print(emp_details)
 
 
-emp_details={'name':'suhas',
+emp_details={'name':'revanth',
              'role':'developer',
              'experience':4,
              'salary':40000000
              }
 role=int(input('enter your role:'))
-emp_details={'name':'suhas',
+emp_details={'name':'revanth',
              'role':'developer',
              'experience':4,
              'salary':40000000
