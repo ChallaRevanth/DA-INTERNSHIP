@@ -1,5 +1,5 @@
 #dictionary
-std_details={'name':'revanth','rollno':553,'ph_no':7208372737,'gender':'male','isActive':True,'skills':['html','JS','css'],'address':{'city':'hyd','pincode':500037},'name':'sv'}
+std_details={'name':'Challa Revanth','rollno':553,'ph_no':7208372737,'gender':'male','isActive':True,'skills':['html','JS','css'],'address':{'city':'hyd','pincode':500037},'name':'sv'}
 
 print(std_details)
 print(std_details['name'])
