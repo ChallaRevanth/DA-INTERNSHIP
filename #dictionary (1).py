@@ -9,10 +9,7 @@ std_details['skills'].append('python')
 print(std_details.get('name'))
 print(std_details.keys())
 print(std_details.values())
-std_details['name']='ram'
-std_details['gender']='male'
-print(std_details)
-std_details['skills'].pop()
+
 
 num=int(input('enter a number:'))
 if num%2!=0:
